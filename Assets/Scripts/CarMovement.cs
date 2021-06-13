@@ -23,7 +23,7 @@ public class CarMovement : MonoBehaviour
         steeringAmount = -Input.GetAxis("Horizontal");
         _speed = Input.GetAxis("Vertical") * _accelerationPower;
         _direction = Mathf.Sign(Vector2.Dot(_rb.velocity, _rb.GetRelativeVector(Vector2.up)));
-        _rb.rotation += steeringAmount * _steeringPower * _rb.velocity.magnitude * _direction;
+        _rb.rotation += (int)(steeringAmount * _steeringPower * _rb.velocity.magnitude * _direction);
 
         _rb.AddRelativeForce(Vector2.up * _speed);
 
