@@ -29,4 +29,20 @@ public class CarMovement : MonoBehaviour
 
         _rb.AddRelativeForce(-Vector2.right * _rb.velocity.magnitude * steeringAmount / 2);
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("OilSpill"))
+        {
+            _rb.drag = 0;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("OilSpill"))
+        {
+            _rb.drag = 5;
+        }
+    }
 }
