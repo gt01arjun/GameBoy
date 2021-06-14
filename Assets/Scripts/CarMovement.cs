@@ -18,10 +18,14 @@ public class CarMovement : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         steeringAmount = -Input.GetAxis("Horizontal");
         _speed = Input.GetAxis("Vertical") * _accelerationPower;
+    }
+
+    private void FixedUpdate()
+    {
         _direction = Mathf.Sign(Vector2.Dot(_rb.velocity, _rb.GetRelativeVector(Vector2.up)));
         _rb.rotation += (int)(steeringAmount * _steeringPower * _rb.velocity.magnitude * _direction);
 
