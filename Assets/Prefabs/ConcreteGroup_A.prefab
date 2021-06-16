@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3409139676630244282}
   - component: {fileID: 1881433274031507808}
+  - component: {fileID: -1710047259449841759}
   m_Layer: 0
-  m_Name: Concrete top 1
+  m_Name: ConcreteGroup_A
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3386779095734820118}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 7.5, y: -0.871, z: 16.514393}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -83,6 +84,39 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &-1710047259449841759
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3386779095734820118}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.7500007, y: 0.99998224}
+      - {x: -0.7494348, y: 1.0003328}
+      - {x: -1.0007256, y: 0.7499099}
+      - {x: -1.0014029, y: -4.627777}
+      - {x: -0.75072265, y: -4.876606}
+      - {x: 0.750484, y: -4.875441}
+      - {x: 0.99979496, y: -4.62453}
+      - {x: 1.0000596, y: 0.749825}
 --- !u!1 &6066445330987147063
 GameObject:
   m_ObjectHideFlags: 0
@@ -108,7 +142,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6066445330987147063}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.9345865, z: 0}
+  m_LocalPosition: {x: 0, y: -1.878, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6047836746929523950}
@@ -190,7 +224,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9057067074870136579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.0004132, z: 0}
+  m_LocalPosition: {x: 0, y: -1.998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3433542264250879002}
