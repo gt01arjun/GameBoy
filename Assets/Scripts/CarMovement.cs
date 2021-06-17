@@ -16,9 +16,12 @@ public class CarMovement : MonoBehaviour
     public bool PlayerInsideCar;
     public GameObject Player;
 
+    private Camera _mainCamera;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _mainCamera = Camera.main;
     }
 
     private void Update()
@@ -28,6 +31,7 @@ public class CarMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.E) && PlayerInsideCar)
         {
+            _mainCamera.GetComponent<CameraFollow>().TargetToFollow = Player.transform;
             Player.transform.position = new Vector2(gameObject.transform.position.x + 2f, gameObject.transform.position.y);
             Player.SetActive(true);
             PlayerInsideCar = false;

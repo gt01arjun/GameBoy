@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -227,6 +228,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23c83d1cb1ed095438a80bb17f92648c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetToFollow: {fileID: 1179236032}
+  SmoothTime: 0.1
 --- !u!1 &1179236030
 GameObject:
   m_ObjectHideFlags: 0
@@ -383,7 +398,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -512,6 +527,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _accelerationPower: 10000
   _steeringPower: 2
+  PlayerInsideCar: 0
+  Player: {fileID: 0}
 --- !u!61 &1925519124
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -527,9 +544,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: -0.000000029802322, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.5, y: 0, z: 0.5, w: 0}
+    border: {x: 1, y: 0, z: 1, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 4, y: 4}
     newSize: {x: 0.32, y: 0.32}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -660,7 +677,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 2, y: 2}
     newSize: {x: 0.16, y: 0.16}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

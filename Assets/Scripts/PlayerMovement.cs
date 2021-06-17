@@ -13,10 +13,13 @@ public class PlayerMovement : MonoBehaviour
 
     private GameObject _currentCar;
 
+    private Camera _mainCamera;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
+        _mainCamera = Camera.main;
     }
 
     private void Update()
@@ -33,6 +36,7 @@ public class PlayerMovement : MonoBehaviour
             _currentCar.GetComponent<CarMovement>().enabled = true;
             _currentCar.GetComponent<CarMovement>().Player = gameObject;
             _currentCar.GetComponent<CarMovement>().PlayerInsideCar = true;
+            _mainCamera.GetComponent<CameraFollow>().TargetToFollow = _currentCar.transform;
             gameObject.SetActive(false);
         }
     }
