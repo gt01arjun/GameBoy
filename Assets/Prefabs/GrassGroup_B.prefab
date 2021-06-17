@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 9048054881169216780}
   - component: {fileID: 4510511648124712917}
   m_Layer: 0
-  m_Name: Grass middle (21)
+  m_Name: rass middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -203,7 +203,7 @@ GameObject:
   - component: {fileID: 7319497550861504144}
   - component: {fileID: 2927960285877152652}
   m_Layer: 0
-  m_Name: Grass middle (20)
+  m_Name: Grass middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 8290341507274932061}
   - component: {fileID: 7240999063622437748}
   m_Layer: 0
-  m_Name: Grass middle (19)
+  m_Name: Grass middle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
