@@ -13,15 +13,31 @@ public class CarMovement : MonoBehaviour
 
     private Rigidbody2D _rb;
 
+    public bool PlayerInsideCar;
+    public GameObject Player;
+
+    private Camera _mainCamera;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _mainCamera = Camera.main;
     }
 
     private void Update()
     {
         steeringAmount = -Input.GetAxis("Horizontal");
         _speed = Input.GetAxis("Vertical") * _accelerationPower;
+
+        if (Input.GetKeyDown(KeyCode.E) && PlayerInsideCar)
+        {
+            _mainCamera.GetComponent<CameraFollow>().TargetToFollow = Player.transform;
+            Player.transform.position = new Vector2(gameObject.transform.position.x + 2f, gameObject.transform.position.y);
+            Player.SetActive(true);
+            PlayerInsideCar = false;
+            Player = null;
+            gameObject.GetComponent<CarMovement>().enabled = false;
+        }
     }
 
     private void FixedUpdate()
