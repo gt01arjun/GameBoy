@@ -1,9 +1,11 @@
+using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public static bool GameOver;
+    public static bool IsGameOver;
     public static bool IsGamePaused;
     public static int GasCanCounter;
     public static int TotalOilCans;
@@ -13,10 +15,21 @@ public class GameManager : MonoBehaviour
     private Slider _gasBar;
     [SerializeField]
     private GameObject _pausePanel;
+    [SerializeField]
+    private string _levelToLoad;
+
+    public static UnityEvent LevelFinishedEvent = new UnityEvent();
+    public static UnityEvent GameFailedEvent = new UnityEvent();
+
+    private void OnEnable()
+    {
+        LevelFinishedEvent.AddListener(LevelComplete);
+        GameFailedEvent.AddListener(GameOver);
+    }
 
     private void Start()
     {
-        GameOver = false;
+        IsGameOver = false;
         GasCanCounter = 0;
         CurrentGasAmount = 0;
         TotalOilCans = FindObjectsOfType<OilCan>().Length;
@@ -27,9 +40,9 @@ public class GameManager : MonoBehaviour
     {
         _gasBar.value = CurrentGasAmount;
 
-        if (CurrentGasAmount <= 0 && TotalOilCans <= 0)
+        if (CurrentGasAmount <= 0 && TotalOilCans <= 0 && IsGameOver == false)
         {
-            Debug.Log("GameOver");
+            GameOver();
         }
 
         if (Input.GetKeyDown(KeyCode.P) && IsGamePaused == true)
@@ -44,5 +57,16 @@ public class GameManager : MonoBehaviour
             _pausePanel.SetActive(true);
             IsGamePaused = true;
         }
+    }
+
+    private void LevelComplete()
+    {
+        IsGameOver = true;
+
+    }
+
+    private void GameOver()
+    {
+        IsGameOver = true;
     }
 }

@@ -7,11 +7,13 @@ public class DetectionLight : MonoBehaviour
 
     Vector3 pointA;
     Vector3 pointB;
+    AudioSource _audioSource;
 
     void Start()
     {
         pointA = transform.eulerAngles + new Vector3(0f, 0f, -rotationAmount);
         pointB = transform.eulerAngles + new Vector3(0f, 0f, rotationAmount);
+        _audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -24,7 +26,8 @@ public class DetectionLight : MonoBehaviour
     {
         if (collision.gameObject.GetComponent<PlayerMovement>() || collision.gameObject.GetComponent<CarMovement>())
         {
-            Debug.Log("GameOver");
+            _audioSource.Play();
+            GameManager.GameFailedEvent.Invoke();
         }
     }
 }

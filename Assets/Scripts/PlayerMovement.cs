@@ -15,16 +15,19 @@ public class PlayerMovement : MonoBehaviour
 
     private Camera _mainCamera;
 
+    private AudioSource _audioSource;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
         _mainCamera = Camera.main;
+        _audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
-        if (GameManager.IsGamePaused)
+        if (GameManager.IsGamePaused || GameManager.IsGameOver)
             return;
 
         _movement.x = Input.GetAxisRaw("Horizontal");
@@ -46,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.IsGamePaused)
+        if (GameManager.IsGamePaused || GameManager.IsGameOver)
             return;
 
         _rb.MovePosition(_rb.position + _movement.normalized * _moveSpeed * Time.fixedDeltaTime);
@@ -59,5 +62,11 @@ public class PlayerMovement : MonoBehaviour
             _canEnterCar = true;
             _currentCar = collision.gameObject;
         }
+    }
+
+    public void PlayWalkAudio()
+    {
+        _audioSource.Stop();
+        _audioSource.Play();
     }
 }

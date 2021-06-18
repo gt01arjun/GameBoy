@@ -20,15 +20,22 @@ public class CarMovement : MonoBehaviour
 
     private Camera _mainCamera;
 
+    private AudioSource _audioSource;
+
+    [SerializeField]
+    private AudioClip[] _audioClips;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
         _mainCamera = Camera.main;
+        _audioSource = GetComponent<AudioSource>();
+        _audioSource.PlayOneShot(_audioClips[2]);
     }
 
     private void Update()
     {
-        if (GameManager.IsGamePaused)
+        if (GameManager.IsGamePaused || GameManager.IsGameOver)
             return;
 
         if (_canFillGas)
@@ -43,7 +50,7 @@ public class CarMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (GameManager.IsGamePaused)
+        if (GameManager.IsGamePaused || GameManager.IsGameOver)
             return;
 
         _direction = Mathf.Sign(Vector2.Dot(_rb.velocity, _rb.GetRelativeVector(Vector2.up)));
@@ -95,10 +102,10 @@ public class CarMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.F) && _canFillGas && GameManager.GasCanCounter > 0)
         {
-            Debug.Log("Fill");
             GameManager.CurrentGasAmount = 1;
             GameManager.GasCanCounter--;
             GameManager.TotalOilCans--;
+            _audioSource.PlayOneShot(_audioClips[0]);
         }
     }
 
@@ -107,6 +114,7 @@ public class CarMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("OilSpill"))
         {
             _rb.drag = 0;
+            _audioSource.PlayOneShot(_audioClips[1]);
         }
     }
 

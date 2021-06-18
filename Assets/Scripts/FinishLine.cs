@@ -6,7 +6,7 @@ public class FinishLine : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("TargetCar"))
         {
-            Debug.Log("LevelPassed");
+            GameManager.LevelFinishedEvent.Invoke();
         }
     }
 }
