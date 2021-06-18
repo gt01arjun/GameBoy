@@ -25,6 +25,9 @@ public class CarMovement : MonoBehaviour
     [SerializeField]
     private AudioClip[] _audioClips;
 
+    [SerializeField]
+    private Sprite _crashedCarSprite;
+
     private void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
@@ -123,6 +126,26 @@ public class CarMovement : MonoBehaviour
         if (collision.gameObject.CompareTag("OilSpill"))
         {
             _rb.drag = 5;
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<PlayerMovement>())
+        {
+            return;
+        }
+
+        gameObject.GetComponent<SpriteRenderer>().sprite = _crashedCarSprite;
+
+        if (_mainCamera != null || Player != null)
+        {
+            _mainCamera.GetComponent<CameraFollow>().TargetToFollow = Player.transform;
+            Player.transform.position = new Vector2(gameObject.transform.position.x + 2f, gameObject.transform.position.y);
+            Player.SetActive(true);
+            PlayerInsideCar = false;
+            Player = null;
+            Destroy(gameObject.GetComponent<CarMovement>());
         }
     }
 }

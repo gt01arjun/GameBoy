@@ -341,6 +341,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -1425,6 +1429,7 @@ MonoBehaviour:
   _pausePanel: {fileID: 1025634348}
   _levelToLoad: Level2
   _levelFailedText: {fileID: 1024406843}
+  _levelSuccessText: {fileID: 0}
 --- !u!4 &589553862
 Transform:
   m_ObjectHideFlags: 0
@@ -1585,6 +1590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
@@ -3119,6 +3128,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
@@ -4858,6 +4871,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -5117,6 +5134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
@@ -6031,6 +6052,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -6605,6 +6630,10 @@ PrefabInstance:
       propertyPath: _canFillGas
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3983068737597374726, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e46cd37517f43a244a050720c797be53, type: 3}
     - target: {fileID: 3983068737597374726, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3

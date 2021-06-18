@@ -327,6 +327,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -342,6 +346,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 33
@@ -587,6 +595,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -602,6 +614,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 34
@@ -2834,6 +2850,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2849,6 +2869,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 32
@@ -3840,6 +3864,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -3855,6 +3883,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 38
@@ -4229,6 +4261,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -4244,6 +4280,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 31
@@ -4864,6 +4904,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -4879,6 +4923,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 39
@@ -6078,6 +6126,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -6093,6 +6145,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 37
@@ -6256,6 +6312,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -6271,6 +6331,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 35
@@ -6550,10 +6614,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3983068737597374724, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3983068737597374726, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
       propertyPath: _canFillGas
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3983068737597374726, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9c2f0204283f0e049a35b1563482cbdd, type: 3}
     - target: {fileID: 3983068737597374726, guid: f4c453cb495d0ca4c8d4a9d577b61b25, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
@@ -7240,6 +7312,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: _crashedCarSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e000a294198f8f24ea40202368c18ed2, type: 3}
+    - target: {fileID: 2576869807085473842, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: _audioClips.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -7255,6 +7331,10 @@ PrefabInstance:
       propertyPath: _audioClips.Array.data[2]
       value: 
       objectReference: {fileID: 8300000, guid: a40609d75113367439651e67cf2c3831, type: 3}
+    - target: {fileID: 2576869807085473843, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
+      propertyPath: m_Constraints
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 3364267881697495411, guid: 5852f93b511e47c4ea077dde34f2dba6, type: 3}
       propertyPath: m_RootOrder
       value: 36
