@@ -28,6 +28,9 @@ public class CarMovement : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.IsGamePaused)
+            return;
+
         if (_canFillGas)
         {
             TargetCarMovement();
@@ -40,6 +43,9 @@ public class CarMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.IsGamePaused)
+            return;
+
         _direction = Mathf.Sign(Vector2.Dot(_rb.velocity, _rb.GetRelativeVector(Vector2.up)));
         _rb.rotation += (int)(_steeringAmount * _steeringPower * _rb.velocity.magnitude * _direction);
 

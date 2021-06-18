@@ -24,6 +24,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (GameManager.IsGamePaused)
+            return;
+
         _movement.x = Input.GetAxisRaw("Horizontal");
         _movement.y = Input.GetAxisRaw("Vertical");
 
@@ -43,6 +46,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.IsGamePaused)
+            return;
+
         _rb.MovePosition(_rb.position + _movement.normalized * _moveSpeed * Time.fixedDeltaTime);
     }
 

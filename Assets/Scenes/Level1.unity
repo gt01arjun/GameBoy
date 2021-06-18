@@ -1111,6 +1111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gasBar: {fileID: 1668995427}
+  _pausePanel: {fileID: 1025634348}
 --- !u!4 &589553862
 Transform:
   m_ObjectHideFlags: 0
@@ -2065,6 +2066,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 12f4d90bf5ee4b6499c3b594e7aa7166, type: 3}
+--- !u!1 &1025634348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2246409820659134669, guid: 12f4d90bf5ee4b6499c3b594e7aa7166, type: 3}
+  m_PrefabInstance: {fileID: 1025634347}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1107711541
 PrefabInstance:
   m_ObjectHideFlags: 0
