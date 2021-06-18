@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static bool IsGameOver;
     public static bool IsGamePaused;
+    public static bool CanQuit;
     public static int GasCanCounter;
     public static int TotalOilCans;
     public static float CurrentGasAmount;
@@ -35,10 +36,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         IsGameOver = false;
+        IsGamePaused = false;
+        CanQuit = false;
         GasCanCounter = 0;
         CurrentGasAmount = 0;
         TotalOilCans = FindObjectsOfType<OilCan>().Length;
-        IsGamePaused = false;
     }
 
     private void Update()
@@ -50,29 +52,26 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
-        if (Input.GetKeyDown(KeyCode.P) && IsGamePaused == true)
+        if (Input.GetKeyDown(KeyCode.N) && IsGamePaused == true)
         {
             Time.timeScale = 1f;
             _pausePanel.SetActive(false);
             IsGamePaused = false;
+            CanQuit = false;
         }
-        else if (Input.GetKeyDown(KeyCode.P) && IsGamePaused == false)
+        else if (Input.GetKeyDown(KeyCode.N) && IsGamePaused == false)
         {
             Time.timeScale = 0f;
             _pausePanel.SetActive(true);
             IsGamePaused = true;
+            CanQuit = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.Y) && IsGamePaused == true)
+        if (Input.GetKeyDown(KeyCode.Y) && CanQuit == true)
         {
             SceneManager.LoadScene("MainMenu");
         }
-        else if (Input.GetKeyDown(KeyCode.N) && IsGamePaused == true)
-        {
-            Time.timeScale = 1f;
-            _pausePanel.SetActive(false);
-            IsGamePaused = false;
-        }
+        
 
     }
 
