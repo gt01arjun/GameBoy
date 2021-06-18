@@ -24,7 +24,12 @@ public class DetectionLight : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<PlayerMovement>() || collision.gameObject.GetComponent<CarMovement>())
+        if (collision.gameObject.GetComponent<PlayerMovement>())
+        {
+            _audioSource.Play();
+            GameManager.GameFailedEvent.Invoke();
+        }
+        else if (collision.gameObject.GetComponent<CarMovement>() && collision.gameObject.GetComponent<CarMovement>().PlayerInsideCar == true)
         {
             _audioSource.Play();
             GameManager.GameFailedEvent.Invoke();

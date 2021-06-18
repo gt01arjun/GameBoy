@@ -23,12 +23,18 @@ public class PlayerMovement : MonoBehaviour
         _animator = GetComponent<Animator>();
         _mainCamera = Camera.main;
         _audioSource = GetComponent<AudioSource>();
+        _canEnterCar = false;
     }
 
     private void Update()
     {
         if (GameManager.IsGamePaused || GameManager.IsGameOver)
+        {
+            _animator.SetFloat("Horizontal", 0);
+            _animator.SetFloat("Vertical", 0);
+            _animator.SetFloat("Speed", 0);
             return;
+        }
 
         _movement.x = Input.GetAxisRaw("Horizontal");
         _movement.y = Input.GetAxisRaw("Vertical");
@@ -61,6 +67,15 @@ public class PlayerMovement : MonoBehaviour
         {
             _canEnterCar = true;
             _currentCar = collision.gameObject;
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<CarMovement>())
+        {
+            _canEnterCar = false;
+            _currentCar = null;
         }
     }
 

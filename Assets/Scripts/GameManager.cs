@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -17,6 +18,8 @@ public class GameManager : MonoBehaviour
     private GameObject _pausePanel;
     [SerializeField]
     private string _levelToLoad;
+    [SerializeField]
+    private GameObject _levelFailedText;
 
     public static UnityEvent LevelFinishedEvent = new UnityEvent();
     public static UnityEvent GameFailedEvent = new UnityEvent();
@@ -57,16 +60,36 @@ public class GameManager : MonoBehaviour
             _pausePanel.SetActive(true);
             IsGamePaused = true;
         }
+
+        if (Input.GetKeyDown(KeyCode.Y) && IsGamePaused == true)
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+        else if (Input.GetKeyDown(KeyCode.N) && IsGamePaused == true)
+        {
+            Time.timeScale = 1f;
+            _pausePanel.SetActive(false);
+            IsGamePaused = false;
+        }
+
     }
 
     private void LevelComplete()
     {
         IsGameOver = true;
+        if (SceneManager.GetActiveScene().name == "Level2")
+        {
 
+        }
+        else
+        {
+            SceneManager.LoadScene(_levelToLoad);
+        }
     }
 
     private void GameOver()
     {
         IsGameOver = true;
+        _levelFailedText.SetActive(true);
     }
 }
