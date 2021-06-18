@@ -19,7 +19,14 @@ public class CarCrash : MonoBehaviour
             return;
         }
 
-        _audioSource.PlayOneShot(_audioClip);
-        GameManager.GameFailedEvent.Invoke();
+        if (gameObject.CompareTag("TargetCar") == true)
+        {
+            _audioSource.PlayOneShot(_audioClip);
+            GameManager.GameFailedEvent.Invoke();
+        }
+        else if (gameObject.CompareTag("TargetCar") == false)
+        {
+            _audioSource.PlayOneShot(_audioClip);
+        }
     }
 }
