@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     private string _levelToLoad;
     [SerializeField]
     private GameObject _levelFailedText;
+    [SerializeField]
+    private GameObject _levelSuccessText;
 
     public static UnityEvent LevelFinishedEvent = new UnityEvent();
     public static UnityEvent GameFailedEvent = new UnityEvent();
@@ -79,7 +81,7 @@ public class GameManager : MonoBehaviour
         IsGameOver = true;
         if (SceneManager.GetActiveScene().name == "Level2")
         {
-
+            _levelSuccessText.SetActive(true);
         }
         else
         {
