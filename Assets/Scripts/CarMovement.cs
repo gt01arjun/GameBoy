@@ -6,6 +6,8 @@ public class CarMovement : MonoBehaviour
     private float _accelerationPower;
     [SerializeField]
     private float _steeringPower;
+    [SerializeField]
+    private bool _canFillGas;
 
     private float steeringAmount;
     private float _speed;
@@ -37,6 +39,11 @@ public class CarMovement : MonoBehaviour
             PlayerInsideCar = false;
             Player = null;
             gameObject.GetComponent<CarMovement>().enabled = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.F) && _canFillGas && GameManager.GasCanCounter > 0)
+        {
+            Debug.Log("Fill");
         }
     }
 

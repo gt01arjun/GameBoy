@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - OilSpill
+  - TargetCar
   layers:
   - Default
   - TransparentFX

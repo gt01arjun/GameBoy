@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 8551222689310064987}
   - component: {fileID: 8551222689310064986}
   - component: {fileID: 532454097786454051}
+  - component: {fileID: 8108861771875343764}
   m_Layer: 0
-  m_Name: Oil can
+  m_Name: OilCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117,3 +118,15 @@ PolygonCollider2D:
       - {x: 0.7501291, y: -0.87420213}
       - {x: 0.75029063, y: 0.49869597}
       - {x: 0.500219, y: 0.75069}
+--- !u!114 &8108861771875343764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8551222689310064965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ef4128c60725a48ae00607d18aae12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
